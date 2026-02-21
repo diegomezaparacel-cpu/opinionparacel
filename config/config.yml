@@ -1,0 +1,91 @@
+project:
+  company: "PARACEL"
+  days_back_default: 180
+  max_records_gdelt: 250
+  max_items_dashboard: 800
+
+queries:
+  - '(PARACEL OR Paracel) AND (Paraguay OR celulosa OR forestal OR eucalipto OR "planta" OR "Concepción")'
+  - '"Paracel" AND (empleo OR "puestos de trabajo" OR contratación OR salarios)'
+  - '"Paracel" AND (ambiental OR ambiente OR "impacto" OR "sustentabilidad" OR "comunidad" OR social)'
+
+sources:
+  gdelt: true
+  google_news_rss: true
+  rss_feeds: []
+
+language:
+  gdelt_language: null
+
+taxonomy:
+  topics:
+    Ambiental:
+      - "\\bambiental\\b"
+      - "\\bambiente\\b"
+      - "\\bdeforest"
+      - "\\bemisiones\\b"
+      - "CO2"
+      - "\\bsustentab"
+      - "\\bsostenib"
+      - "\\bcarbon"
+      - "\\bimpacto\\b"
+      - "\\bEIA\\b"
+    Laboral:
+      - "\\bempleo\\b"
+      - "\\bcontrat"
+      - "\\btrabaj"
+      - "\\bsindicat"
+      - "\\bseguridad\\s+laboral\\b"
+      - "\\baccident"
+      - "\\bsalario\\b"
+    Comunidad:
+      - "\\bcomunidad"
+      - "\\bindígen"
+      - "\\bconsulta\\b"
+      - "\\breasent"
+      - "\\bterritorio\\b"
+      - "\\bimpacto\\s+social\\b"
+      - "\\bconflicto\\b"
+    Inversión:
+      - "\\binversi"
+      - "\\bfinanci"
+      - "\\bbono"
+      - "\\bcapex\\b"
+      - "\\bmillones\\b"
+      - "\\bUSD\\b"
+    Operación:
+      - "\\bplanta\\b"
+      - "\\bproducci"
+      - "\\bcelulosa\\b"
+      - "\\bforestal\\b"
+      - "\\beucalipto\\b"
+      - "\\blogística\\b"
+      - "\\bpuerto\\b"
+
+sentiment:
+  positive:
+    - "crecimiento"
+    - "inversión"
+    - "empleo"
+    - "mejora"
+    - "sostenible"
+    - "sustentable"
+    - "beneficio"
+    - "innovación"
+    - "desarrollo"
+    - "apoyo"
+    - "alianza"
+    - "éxito"
+  negative:
+    - "conflicto"
+    - "denuncia"
+    - "impacto"
+    - "contaminación"
+    - "deforestación"
+    - "accidente"
+    - "irregular"
+    - "multa"
+    - "reclamo"
+    - "protesta"
+    - "crisis"
+    - "fraude"

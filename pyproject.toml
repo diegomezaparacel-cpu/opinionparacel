@@ -1,0 +1,10 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "paracel-opinion-monitor"
+version = "0.1.0"
+description = "Daily monitoring of web mentions and tone about PARACEL, with static interactive dashboard for GitHub Pages."
+requires-python = ">=3.11"
+dependencies = []
